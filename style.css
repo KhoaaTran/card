@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Fira Sans Condensed", sans-serif;
+    background: #005e94;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    padding: 50px;
+    max-width: 100%;
+    border: 20px solid #b3ecff;
+    background: #e5f9ff;
+}
+
+.card__upper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 3px solid #005e94;
+    padding-bottom: 30px;
+}
+
+.logo__wrapper {
+    width: 40%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.card__content {
+    text-align: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.card__content-inner {
+    display: flex;
+    transition: 0.5s;
+}
+
+.card__item {
+    flex: 1 0 100%;
+}
+
+.card__quote {
+    max-width: 80%;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.card__desc {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.card__desc-name {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.dots {
+    margin-top: 25px;
+}
+
+.dot {
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    outline: none;
+    background: #b3ecff;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.dot.active {
+    background: #004166;
+    scale: 5;
+    margin-inline: 25px;
+}
+
+.dot.active img {
+    opacity: 1;
+}
+
+.card__lower {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover .btn__icon {
+    color: #004166;
+}
+
+.btn__icon {
+    color: #00416680;
+    font-size: 2rem;
+    transition: 0.2s;
+}
+
+.dot img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0;
+}
